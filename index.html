@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Robohunt Attendance System</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image" href="/logo (RT4).png">
-    </head>
-    <body class="body">
-        
-        <div class="login_screen">
-            <h1>RoboHunt Technology Attendance System</h1>    
-            <div class="form">
-            User Name
-            <input type="text" placeholder="Robohunt Technology " id="userName" name="UserName"><br>
-            Password
-            <input  class="password" type="password" placeholder="Password" value="password" id="password" name="passwordKey"><br>
-            <input type="checkbox" name="rememberme" id="">
-            Remember Me?
-            forgot password?<br>
-            <input type="submit" value="Login" onclick="" onmouseover="">
-        </div>
-        </div>
+  <head>
+    <title>Robohunt Attendance System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image" href="/logo (RT4).png" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login Page</h1>
+      <p>Please enter your login details below:</p>
+      <form action="submit.html" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
 
-     
-    </body>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
 </html>
