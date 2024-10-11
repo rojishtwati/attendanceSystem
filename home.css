@@ -1,0 +1,29 @@
+a {
+  display: block;
+  border: 2px solid blue;
+  width: 100px;
+  margin-left: auto;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid red;
+  width: 50vw;
+  margin: auto;
+  padding: 2rem;
+}
+
+.btn-check {
+  font-size: larger;
+  width: 200px;
+  height: 200px;
+}
+
+.container-records {
+  display: none;
+  border: 1px solid blue;
+  width: 200px;
+  margin: auto;
+  margin-top: 100px;
+}
