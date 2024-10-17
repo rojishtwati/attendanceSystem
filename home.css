@@ -1,3 +1,7 @@
+body {
+  color: white;
+  background-color: black;
+}
 a {
   display: block;
   border: 2px solid blue;
@@ -15,6 +19,15 @@ a {
 }
 
 .btn-check {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(./utils//buttonBackground.jpeg);
+  color: white;
   font-size: larger;
   width: 200px;
   height: 200px;
@@ -26,4 +39,17 @@ a {
   width: 200px;
   margin: auto;
   margin-top: 100px;
+}
+
+button.btn-check#check-in:hover:not([disabled]) {
+  background-image: url("./utils//checkIn.jpg");
+  background-size: cover;
+
+  color: transparent;
+}
+
+button.btn-check#check-out:hover:not([disabled]) {
+  background-image: url("./utils//checkOut.jpeg");
+  background-size: cover;
+  color: transparent;
 }
