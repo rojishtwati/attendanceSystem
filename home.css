@@ -1,3 +1,12 @@
+body {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("./utils/image.jpg");
+  background-size: cover;
+
+  background-attachment: fixed;
+}
+
 a {
   display: block;
   border: 2px solid blue;
@@ -5,7 +14,7 @@ a {
   margin-left: auto;
 }
 
-.container-btn {
+.main-container-btn {
   display: flex;
   justify-content: space-around;
   border: 2px solid red;
@@ -14,10 +23,32 @@ a {
   padding: 2rem;
 }
 
+.sub-container-btn {
+  border: 3px solid rgb(34, 68, 119);
+
+  box-shadow: 3px -2px 10px 10px black;
+}
 .btn-check {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(./utils//checkButtonBackgroundImage.jpeg);
+  background-size: cover;
+  color: white;
   font-size: larger;
   width: 200px;
   height: 200px;
+  border: 3px solid rgb(34, 68, 119);
+}
+button.btn-check:disabled {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(./utils//checkButtonBackgroundImage.jpeg);
 }
 
 .container-records {
@@ -26,4 +57,17 @@ a {
   width: 200px;
   margin: auto;
   margin-top: 100px;
+}
+
+button.btn-check#check-in:hover:not([disabled]) {
+  background-image: url("./utils//checkIn.jpg");
+  background-size: cover;
+
+  color: transparent;
+}
+
+button.btn-check#check-out:hover:not([disabled]) {
+  background-image: url("./utils//checkOut.jpeg");
+  background-size: cover;
+  color: transparent;
 }
