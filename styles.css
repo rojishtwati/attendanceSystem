@@ -15,10 +15,11 @@
       100% {background-color: green;}        */
 }
 
-.body {
+/* body {
   display: grid;
+  background-color: black;
+  background-image: url("./utils/image.jpg");
 
-  /* background-image: url(image.jpg); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,6 +32,10 @@
   background-position-x: center;
   background-attachment: fixed;
   background-position-y: center;
+} */
+
+body {
+  background-color: rgb(31, 24, 24);
 }
 .login_screen {
   /* box-sizing: border-box; */
@@ -87,10 +92,6 @@ input {
     align-items: center;
     align-content: center;
 } */
-
-body {
-  background-color: black;
-}
 
 .login-container {
   display: flex;
