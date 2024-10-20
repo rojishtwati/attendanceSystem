@@ -7,8 +7,12 @@
     <title>Main Page</title>
   </head>
   <body>
-    <h1>Welcome to Our Website</h1>
-    <a href="index.html"> Logout </a>
+    <nav>
+      <li>Home</li>
+      <li><a href="index.html"> Logout </a></li>
+    </nav>
+    <h1 class="header-welcome">Welcome to Our Website</h1>
+
     <p>You have successfully logged in.</p>
     <div class="main-container-btn">
       <div class="sub-container-btn">
@@ -18,12 +22,32 @@
         <button class="btn-check" id="check-out">Check Out</button>
       </div>
     </div>
+
     <div class="container-records">
-      <ul>
-        <li>Monday : 2am -6pm</li>
-        <li>Monday : 2am -6pm</li>
-        <li>Monday : 2am -6pm</li>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">Date<br />(YY/MM/DD)</th>
+            <th colspan="2">Time</th>
+          </tr>
+          <tr>
+            <th>Checked In Time</th>
+            <th>Checked Out Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024/10/12</td>
+            <td>1 P.M</td>
+            <td>2 P.M</td>
+          </tr>
+          <tr>
+            <td>2024/10/11</td>
+            <td>10 A.M</td>
+            <td>5 P.M</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <script src="home.js"></script>
   </body>

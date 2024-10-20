@@ -7,6 +7,10 @@ body {
   background-attachment: fixed;
 }
 
+nav {
+  background-color: red;
+  width: 100%;
+}
 a {
   display: block;
   border: 2px solid blue;
@@ -17,17 +21,22 @@ a {
 .main-container-btn {
   display: flex;
   justify-content: space-around;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 50vw;
   margin: auto;
   padding: 2rem;
 }
 
-.sub-container-btn {
-  border: 3px solid rgb(34, 68, 119);
+.sub-container-btn:not(:has(button.btn-check:disabled)) {
+  box-shadow: 10px 5px 5px black;
 
-  box-shadow: 3px -2px 10px 10px black;
+  background-color: black;
 }
+
+.sub-container-btn > button.btn-check:disabled {
+  box-shadow: 10px 12px 15px 20px black inset;
+}
+
 .btn-check {
   background-image: linear-gradient(
       180deg,
@@ -40,21 +49,20 @@ a {
   font-size: larger;
   width: 200px;
   height: 200px;
-  border: 3px solid rgb(34, 68, 119);
 }
 button.btn-check:disabled {
-  background-image: linear-gradient(
+  background-image: 
+  /* linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
-    ),
-    url(./utils//checkButtonBackgroundImage.jpeg);
+    ), */ url(./utils//checkButtonBackgroundImage.jpeg);
 }
 
 .container-records {
   display: none;
-  border: 1px solid blue;
-  width: 200px;
+  border: 10px solid blue;
+  width: 500px;
   margin: auto;
   margin-top: 100px;
 }
@@ -70,4 +78,50 @@ button.btn-check#check-out:hover:not([disabled]) {
   background-image: url("./utils//checkOut.jpeg");
   background-size: cover;
   color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+  background-color: #333a46;
+
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.1em;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(52, 97, 155);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(83, 144, 223);
+}
+
+tbody tr:hover {
+  background-color: #82b4ee;
+  cursor: pointer;
+}
+
+tbody td {
+  text-align: center;
+}
+
+th {
+  background-color: #0f1114;
+  color: white;
 }
